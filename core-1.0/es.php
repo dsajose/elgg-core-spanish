@@ -25,41 +25,41 @@
 		 */
 			'exception:title' => "Bienvenido a Elgg.",
 	
-			'InstallationException:CantCreateSite' => "Unable to create a default ElggSite with credentials Name:%s, Url: %s",
+			'InstallationException:CantCreateSite' => "No es posible crear un sitio Elgg por defecto con la información suministrada Nombre:%s, URL: %s",
 		
-			'actionundefined' => "The requested action (%s) was not defined in the system.",
-			'actionloggedout' => "Sorry, you cannot perform this action while logged out.",
+			'actionundefined' => "La acción solicitada (%s) no está definida en el sistema.",
+			'actionloggedout' => "Lo sentimos, no puedes realizar esta acción mientras no haya ingresado.",
 	
-			'notfound' => "The requested resource could not be found, or you do not have access to it.",
+			'notfound' => "El recurso solicitado no fué encontrado, ó no tiene acceso a el.",
 			
-			'SecurityException:Codeblock' => "Denied access to execute privileged code block",
-			'DatabaseException:WrongCredentials' => "Elgg couldn't connect to the database using the given credentials %s@%s (pw: %s).",
-			'DatabaseException:NoConnect' => "Elgg couldn't select the database '%s', please check that the database is created and you have access to it.",
-			'SecurityException:FunctionDenied' => "Access to privileged function '%s' is denied.",
-			'DatabaseException:DBSetupIssues' => "There were a number of issues: ",
-			'DatabaseException:ScriptNotFound' => "Elgg couldn't find the requested database script at %s.",
+			'SecurityException:Codeblock' => "Acceso denegado para ejecutar esta instrucción privilegiada",
+			'DatabaseException:WrongCredentials' => "Elgg no se puede conectar a la base de datos con la información suministrada %s@%s (pw: %s).",
+			'DatabaseException:NoConnect' => "Elgg no ha podido seleccionar la base de datos '%s', asegúrate que esta haya sido creada y tengas acceso a ella.",
+			'SecurityException:FunctionDenied' => "EL acceso a la función privilegiada '%s' ha sido negada.",
+			'DatabaseException:DBSetupIssues' => "Se encontraron una serie de errores: ",
+			'DatabaseException:ScriptNotFound' => "Elgg no puede encontrar el código de acceso a bases de datos en %s.",
 			
-			'IOException:FailedToLoadGUID' => "Failed to load new %s from GUID:%d",
-			'InvalidParameterException:NonElggObject' => "Passing a non-ElggObject to an ElggObject constructor!",
-			'InvalidParameterException:UnrecognisedValue' => "Unrecognised value passed to constuctor.",
+			'IOException:FailedToLoadGUID' => "Ha fallado el intento de cargar nuevo %s de GUID:%d",
+			'InvalidParameterException:NonElggObject' => "Ha enviadoun un non-ElggObject a un ElggObject constructor!",
+			'InvalidParameterException:UnrecognisedValue' => "Valor no reconocido ha sido enviado al constuctor.",
 			
-			'InvalidClassException:NotValidElggStar' => "GUID:%d is not a valid %s",
+			'InvalidClassException:NotValidElggStar' => "GUID:%d no es un válido %s",
 			
-			'PluginException:MisconfiguredPlugin' => "%s is a misconfigured plugin.",
+			'PluginException:MisconfiguredPlugin' => "%s es un plugin desconfigurado.",
 			
-			'InvalidParameterException:NonElggUser' => "Passing a non-ElggUser to an ElggUser constructor!",
+			'InvalidParameterException:NonElggUser' => "Ha pasado un non-ElggUser a un ElggUser constructor!",
 			
-			'InvalidParameterException:NonElggSite' => "Passing a non-ElggSite to an ElggSite constructor!",
+			'InvalidParameterException:NonElggSite' => "Ha pasado un non-ElggSite a un ElggSite constructor!",
 			
-			'InvalidParameterException:NonElggGroup' => "Passing a non-ElggGroup to an ElggGroup constructor!",
+			'InvalidParameterException:NonElggGroup' => "Ha pasado un non-ElggGroup a un ElggGroup constructor!",
 	
-			'IOException:UnableToSaveNew' => "Unable to save new %s",
+			'IOException:UnableToSaveNew' => "No ha sido posible salvar nuevo %s",
 			
-			'InvalidParameterException:GUIDNotForExport' => "GUID has not been specified during export, this should never happen.",
-			'InvalidParameterException:NonArrayReturnValue' => "Entity serialisation function passed a non-array returnvalue parameter",
+			'InvalidParameterException:GUIDNotForExport' => "No se ha especificado un GUID durante la exportación, esto no debió pasar.",
+			'InvalidParameterException:NonArrayReturnValue' => "La entidad serializada no ha enviado una cadena con parámetros devueltos",
 			
-			'ConfigurationException:NoCachePath' => "Cache path set to nothing!",
-			'IOException:NotDirectory' => "%s is not a directory.",
+			'ConfigurationException:NoCachePath' => "¡El directorio Caché no ha sido establecido!",
+			'IOException:NotDirectory' => "%s no es un directorio.",
 			
 			'IOException:BaseEntitySaveFailed' => "Unable to save new object's base entity information!",
 			'InvalidParameterException:UnexpectedODDClass' => "import() passed an unexpected ODD class",
