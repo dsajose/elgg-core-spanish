@@ -2,221 +2,221 @@
 
 	$spanish = array(
 
+	    /*
+	     * This translation is still incomplete
+             * Version 0.2
+	     * September 2nd-2008
+	     * TODO
+	     * Review for orthographic mistakes
+	     * Translate plug-in (in the respective files)
+	     */
 		/**
 		 * Sites
 		 */
-
+	
 			'item:site' => 'Sitios',
-
+	
 		/**
 		 * Sessions
 		 */
-
+			
 			'login' => "Ingresar",
-			'loginok' => "Ha ingresado correctamente.",
-			'loginerror' => "No se ha podido ingresar. Probablemente no has validad tu cuenta aún, ó los detalles que has enviado están incorrectos. Asegúrate de ello e intenta nuevamente.",
-
+			'loginok' => "Acceso Autorizado.",
+			'loginerror' => "Acceso Denegado. Revisa los datos e intenta nuevamente.",
+	
 			'logout' => "Salir",
-			'logoutok' => "Has salido correctamente.",
-			'logouterror' => "No ha podido ingresar. Intenta nuevamente.",
-
+			'logoutok' => "Haz terminado tu sesión",
+			'logouterror' => "Error en el proceso de salida.",
+	
 		/**
 		 * Errors
 		 */
 			'exception:title' => "Bienvenido a Elgg.",
-
-			'InstallationException:CantCreateSite' => "No es posible crear un sitio Elgg por defecto con la información suministrada Nombre:%s, URL: %s",
-
-			'actionundefined' => "La acción solicitada (%s) no está definida en el sistema.",
-			'actionloggedout' => "Lo sentimos, no puedes realizar esta acción mientras no haya ingresado.",
-
-			'notfound' => "El recurso solicitado no fué encontrado, ó no tiene acceso a el.",
-
-			'SecurityException:Codeblock' => "Acceso denegado para ejecutar esta instrucción privilegiada",
-			'DatabaseException:WrongCredentials' => "Elgg no se puede conectar a la base de datos con la información suministrada %s@%s (pw: %s).",
-			'DatabaseException:NoConnect' => "Elgg no ha podido seleccionar la base de datos '%s', asegúrate que esta haya sido creada y tengas acceso a ella.",
-			'SecurityException:FunctionDenied' => "El acceso a la función privilegiada '%s' ha sido negada.",
-			'DatabaseException:DBSetupIssues' => "Se encontraron una serie de errores: ",
-			'DatabaseException:ScriptNotFound' => "Elgg no puede encontrar el código de acceso a bases de datos en %s.",
-
-			'IOException:FailedToLoadGUID' => "Ha fallado el intento de cargar nuevo %s de GUID:%d",
-			'InvalidParameterException:NonElggObject' => "Ha enviadoun un non-ElggObject a un ElggObject constructor!",
-			'InvalidParameterException:UnrecognisedValue' => "Valor no reconocido ha sido enviado al constuctor.",
-
-			'InvalidClassException:NotValidElggStar' => "GUID:%d no es un válido %s",
-
-			'PluginException:MisconfiguredPlugin' => "%s es un plugin desconfigurado.",
-
-			'InvalidParameterException:NonElggUser' => "Ha pasado un non-ElggUser a un ElggUser constructor!",
-
-			'InvalidParameterException:NonElggSite' => "Ha pasado un non-ElggSite a un ElggSite constructor!",
-
-			'InvalidParameterException:NonElggGroup' => "Ha pasado un non-ElggGroup a un ElggGroup constructor!",
-
-			'IOException:UnableToSaveNew' => "No ha sido posible salvar nuevo %s",
-
-			'InvalidParameterException:GUIDNotForExport' => "No se ha especificado un GUID durante la exportación, esto no debió pasar.",
-			'InvalidParameterException:NonArrayReturnValue' => "La entidad serializada no ha enviado una cadena con parámetros devueltos",
-
-			'ConfigurationException:NoCachePath' => "¡El directorio Caché no ha sido establecido!",
+	
+			'InstallationException:CantCreateSite' => "No puedo crear un sitio con el nombre de la credencial:%s, Url: %s",
+		
+			'actionundefined' => "La acción requerida (%s) no esta definida en el sistema.",
+			'actionloggedout' => "Perdón, no puedes realizar estar acción mientras no est√©s fuera del servicio.",
+	
+			'notfound' => "El recurso que se pide no fue encontrado, o no tienes los permisos necesarios.",
+			
+			'SecurityException:Codeblock' => "Acceso denegado para ejecutar bloque de código privilegiado",
+			'DatabaseException:WrongCredentials' => "Elgg no pudo conectarse a la base de datos usando los datos que completaste %s@%s (pw: %s).",
+			'DatabaseException:NoConnect' => "Elgg no pudo seleccionar la base de datos '%s', por favor checa que la base esta creada y se puede accesar.",
+			'SecurityException:FunctionDenied' => "El acceso a la función privilegiada '%s' no está permitida.",
+			'DatabaseException:DBSetupIssues' => "Hay un número de cuestiones: ",
+			'DatabaseException:ScriptNotFound' => "Elgg no pudo encontrar el script de la base de datos en %s.",
+			
+			'IOException:FailedToLoadGUID' => "Fallo al leer el nuevo %s del GUID:%d",
+			'InvalidParameterException:NonElggObject' => "Error al pasar un objeto incorrecto a un constructor ElggObject!",
+			'InvalidParameterException:UnrecognisedValue' => "Se paso incorrectamente un valor irreconocible a un constructor.",
+			
+			'InvalidClassException:NotValidElggStar' => "GUID:%d no es un valido %s",
+			
+			'PluginException:MisconfiguredPlugin' => "%s es un plugin mal configurado.",
+			
+			'InvalidParameterException:NonElggUser' => "Error al pasar un objeto incorrecto a un constructor ElggUser!",
+			
+			'InvalidParameterException:NonElggSite' => "Error al pasar un objeto incorrecto a un constructor ElggSite!",
+			
+			'InvalidParameterException:NonElggGroup' => "Error al pasar un objeto incorrecto a un constructor ElggGroup!",
+	
+			'IOException:UnableToSaveNew' => "No se puede salvar %s",
+			
+			'InvalidParameterException:GUIDNotForExport' => "GUID no ha sido especificado durante la exportación, esto nunca debería pasar.",
+			'InvalidParameterException:NonArrayReturnValue' => "La funcion de la serialización de la entidad paso un parámetro que no es un arreglo",
+			
+			'ConfigurationException:NoCachePath' => "El path del cache no esta especificado!",
 			'IOException:NotDirectory' => "%s no es un directorio.",
-
-			'IOException:BaseEntitySaveFailed' => "¡No se pudo salvar la nueva información de la identidad base!",
-			'InvalidParameterException:UnexpectedODDClass' => "import() ha pasado una clase ODD inesperada",
-			'InvalidParameterException:EntityTypeNotSet' => "El tipo de entidad debe ser ingresado.",
-
+			
+			'IOException:BaseEntitySaveFailed' => "No se puede salvar la información de entidad base del nuevo objeto!",
+			'InvalidParameterException:UnexpectedODDClass' => "La función import() paso una clase ODD no esperada",
+			'InvalidParameterException:EntityTypeNotSet' => "El tipo de entidad debe estar definido.",
+			
 			'ClassException:ClassnameNotClass' => "%s no es un %s.",
-			'ClassNotFoundException:MissingClass' => "La clase '%s' no fué encontrada, ¿plugin inexistente?",
-			'InstallationException:TypeNotSupported' => "El tipo %s no es soportado. Esto indica un error en su instalación, originado tal vez por una actualización incompleta.",
+			'ClassNotFoundException:MissingClass' => "La clase '%s' no fue encontrada, plugin esta perdido?",
+			'InstallationException:TypeNotSupported' => "El tipo %s no esta soportado. Esto indica un error en la instalación, muy probablemente causado por una actualización incompleta.",
 
-			'ImportException:ImportFailed' => "No se pudo importar el elemento %d",
-			'ImportException:ProblemSaving' => "Hubo un problema al salvar %s",
-			'ImportException:NoGUID' => "La nueva entidad creada no tiene GUID, esto no debió pasar.",
-
+			'ImportException:ImportFailed' => "No se puede importar el elemento %d",
+			'ImportException:ProblemSaving' => "Hubo un problema salvando %s",
+			'ImportException:NoGUID' => "Se creo una nueva entidad que no tiene GUID, esto no debería de pasar.",
+			
 			'ImportException:GUIDNotFound' => "La entidad '%d' no pudo ser encontrada.",
-			'ImportException:ProblemUpdatingMeta' => "Hay un problema actualizando '%s' en la entidad '%d'",
-
-			'ExportException:NoSuchEntity' => "No existe una entidad GUID:%d", 
-
-			'ImportException:NoODDElements' => "No hay elementos OpenDD encontrados en la información importada, la importación ha fallado.",
+			'ImportException:ProblemUpdatingMeta' => "Hubo un problema actualizando '%s' en la entidad '%d'",
+			
+			'ExportException:NoSuchEntity' => "No existe la entidad GUID:%d", 
+			
+			'ImportException:NoODDElements' => "No hay elementos OpenDD encontrados en los datos importados, la importación falló.",
 			'ImportException:NotAllImported' => "No todos los elementos fueron importados.",
-
+			
 			'InvalidParameterException:UnrecognisedFileMode' => "Modo de archivo no reconocido '%s'",
-			'InvalidParameterException:MissingOwner' => "¡Todos los archivos deben tener un dueño!",
-			'IOException:CouldNotMake' => "No se pudo hacer %s",
+			'InvalidParameterException:MissingOwner' => "¡Todos los archivos deben de tener un dueño!",
+			'IOException:CouldNotMake' => "No puedo hacer %s",
 			'IOException:MissingFileName' => "Debe especificar un nombre antes de abrir un archivo.",
-			'ClassNotFoundException:NotFoundNotSavedWithFile' => "¡ Filestore no fué encontrado ó la clase no fué salvada con el archivo!",
-			'NotificationException:NoNotificationMethod' => "No hay un método de notificación especificado.",
-			'NotificationException:NoHandlerFound' => "No se encontró un controlador para '%s' ó este no está disponible.",
-			'NotificationException:ErrorNotifyingGuid' => "Hay un error mientras se notificaba %d",
-			'NotificationException:NoEmailAddress' => "No se puede obtener la dirección de correo para GUID:%d",
-			'NotificationException:MissingParameter' => "Parametro requerido inexistente, '%s'",
-
-			'DatabaseException:WhereSetNonQuery' => "En un grupo de datos que no contienen WhereQueryComponent",
-			'DatabaseException:SelectFieldsMissing' => "Campos no existen en la consulta seleccionada",
-			'DatabaseException:UnspecifiedQueryType' => "Tipo de consulta no especificado ó no reconocido.",
-			'DatabaseException:NoTablesSpecified' => "No hay tablas especificadas para consultar.",
-			'DatabaseException:NoACL' => "No hay acceso al control brindado en la consulta",
-
-			'InvalidParameterException:NoEntityFound' => "No se ha encontrado una entidad, no existe ó no tiene acceso a ella.",
-
-			'InvalidParameterException:GUIDNotFound' => "GUID:%s no fué encontrada, ó no tiene acceso a ella.",
-			'InvalidParameterException:IdNotExistForGUID' => "Lo sentimos, '%s' no existe para guid:%d",
-			'InvalidParameterException:CanNotExportType' => "Lo sentimos, no sabemos como exportar '%s'",
-			'InvalidParameterException:NoDataFound' => "No se encontró ningún tipo de datos.",
+			'ClassNotFoundException:NotFoundNotSavedWithFile' => "No se encontró Filestore o la clase no fue salvada con el archivo!",
+			'NotificationException:NoNotificationMethod' => "No se especificó un m√©todo de notificación.",
+			'NotificationException:NoHandlerFound' => "No se encontró la liga para '%s' o no puede ser llamada.",
+			'NotificationException:ErrorNotifyingGuid' => "Hubo un error al notificar %d",
+			'NotificationException:NoEmailAddress' => "No se pudo obtener una dirección de correo electrónico para GUID:%d",
+			'NotificationException:MissingParameter' => "No se encuentra el parametro requerido, '%s'",
+			
+			'DatabaseException:WhereSetNonQuery' => "El set Where no contiene WhereQueryComponent",
+			'DatabaseException:SelectFieldsMissing' => "Los campos no se encuentran en la requisición de base de datos estilo Select",
+			'DatabaseException:UnspecifiedQueryType' => "Tipo de requisición de base de datos no reconocida o no especificada.",
+			'DatabaseException:NoTablesSpecified' => "No hay tablas especificadas para la requisición de base de datos.",
+			'DatabaseException:NoACL' => "No se proveyo de control de acceso en la requisición de base de datos",
+			
+			'InvalidParameterException:NoEntityFound' => "No se encontró la entidad, no existe o no tiene acceso a ella.",
+			
+			'InvalidParameterException:GUIDNotFound' => "GUID:%s no pudo ser encontrada, o no tiene acceso a ella.",
+			'InvalidParameterException:IdNotExistForGUID' => "Disculpa, '%s' no existe para guid:%d",
+			'InvalidParameterException:CanNotExportType' => "Disculpa, no se como exportar '%s'",
+			'InvalidParameterException:NoDataFound' => "No se pudo encontrar ningun dato.",
 			'InvalidParameterException:DoesNotBelong' => "No pertenece a la entidad.",
-			'InvalidParameterException:DoesNotBelongOrRefer' => "No pertenece o es referida de ninguna entidad.",
-			'InvalidParameterException:MissingParameter' => "Parámetro inexistente, necesita proveer un GUID.",
-
-			'SecurityException:APIAccessDenied' => "Lo sentimos, El acceso al API ha sido deshabilitado por el administrador.",
-			'SecurityException:NoAuthMethods' => "No se han encontrado métodos de autenticación que permitan proceder en la petición enviada al API.",
-			'APIException:ApiResultUnknown' => "El resultado del API es de tipo desconocido, esto no debió pasar.", 
-
-			'ConfigurationException:NoSiteID' => "No se ha especificado una ID de sitio.",
-			'InvalidParameterException:UnrecognisedMethod' => "Llada al método '%s' no fué reconocida",
-			'APIException:MissingParameterInMethod' => "Parámetro inexistente %s en el método %s",
-			'APIException:ParameterNotArray' => "%s no parece ser una cadena.",
-			'APIException:UnrecognisedTypeCast' => "Tipo no reconocido en %s para la variable '%s' en el metodo '%s'",
-			'APIException:InvalidParameter' => "Parámetro inválido encontrado para 's' en el metodo '%s'.",
-			'APIException:FunctionParseError' => "%s(%s) tiene error parseo.",
-			'APIException:FunctionNoReturn' => "%s(%s) no retornó valores.",
-			'SecurityException:AuthTokenExpired' => "El token de autenticación es inexistente, inválido o ha expirado.",
+			'InvalidParameterException:DoesNotBelongOrRefer' => "No pertenece a la entidad o se refiere a la entidad.",
+			'InvalidParameterException:MissingParameter' => "Parámetro no encontrado, necesita proveer un GUID.",
+			
+			'SecurityException:APIAccessDenied' => "Disculpa, el acceso al API ha sido deshabilitado por el administrador.",
+			'SecurityException:NoAuthMethods' => "No se encontraron m√©todos de autentificacion que puedan autentificar esta requisicion de API.",
+			'APIException:ApiResultUnknown' => "El resultado del API es de tipo desconocido, esto nunca debe ocurrir.", 
+			
+			'ConfigurationException:NoSiteID' => "No ID del sitio ha sido especificado.",
+			'InvalidParameterException:UnrecognisedMethod' => "M√©todo de llamada no reconocido '%s'",
+			'APIException:MissingParameterInMethod' => "Parámetro no encontrado %s en el m√©todo %s",
+			'APIException:ParameterNotArray' => "%s no parece ser un arreglo.",
+			'APIException:UnrecognisedTypeCast' => "Tipo no reconocido en el computo %s de la variable '%s' en el m√©todo '%s'",
+			'APIException:InvalidParameter' => "Se encontró un parametro invalido para '%s' en el m√©todo '%s'.",
+			'APIException:FunctionParseError' => "%s(%s) tiene un error de parseo.",
+			'APIException:FunctionNoReturn' => "%s(%s) no regreso un valor.",
+			'SecurityException:AuthTokenExpired' => "El token de autentificación esta perdido, o es invalido o expiro.",
 			'CallException:InvalidCallMethod' => "%s debe ser llamado usando '%s'",
-			'APIException:MethodCallNotImplemented' => "La llamada al método '%s' no ha sido implementada.",
-			'APIException:AlgorithmNotSupported' => "El algoritmo '%s' no es soportado ó ha sido deshabilitado.",
-			'ConfigurationException:CacheDirNotSet' => "El directorio caché 'cache_path' no ha sido ajustado.",
-			'APIException:NotGetOrPost' => "Método requerido debe ser GET ó POST",
-			'APIException:MissingAPIKey' => "X-Elgg-apikey inexistente en las cabeceras HTTP",
-			'APIException:MissingHmac' => "cabecera X-Elgg-hmac inexistente",
-			'APIException:MissingHmacAlgo' => "Cabecera X-Elgg-hmac-algo inexistente",
-			'APIException:MissingTime' => "Cabecera X-Elgg-time inexistente",
-			'APIException:TemporalDrift' => "X-Elgg-time está ajustada muy en el pasado ó en el futuro. Epoch ha fallado.",
-			'APIException:NoQueryString' => "No se han enviado datos en la consulta",
-			'APIException:MissingPOSTHash' => "Cabecera X-Elgg-posthash inexistente",
-			'APIException:MissingPOSTAlgo' => "Cabecera X-Elgg-posthash_algo inexistente",
-			'APIException:MissingContentType' => "No existe el tipo de contenido en los datos suministrados",
-			'SecurityException:InvalidPostHash' => "Datos hasg en POST son inválidos - Se esperaba %s pero obtuvo %s.",
-			'SecurityException:DupePacket' => "Firma enviada es reconocida.",
-			'SecurityException:InvalidAPIKey' => "Llave API inválida ó inexistente.",
-			'NotImplementedException:CallMethodNotImplemented' => "Llamada al método '%s' no es soportada actualmente.",
-
-			'NotImplementedException:XMLRPCMethodNotImplemented' => "La llamada XML-RPC '%s' no ha sido implementada.",
-			'InvalidParameterException:UnexpectedReturnFormat' => "Llamada al método '%s' ha obtenido un resultado no esperado.",
-			'CallException:NotRPCCall' => "La llamada no parece ser válida XML-RPC",
-
-			'PluginException:NoPluginName' => "El plugin no ha sido encontrado",
-
-			'ConfigurationException:BadDatabaseVersion' => "La base de datos que tienes instalada no se ajusta a los requerimientos para ejecutar Elgg. Por favor consulte su documentación.",
-			'ConfigurationException:BadPHPVersion' => "Para ejecucion se requiere almenos PHP version 5.2.",
-
-
-			'InstallationException:DatarootNotWritable' => "El directorio de datos %s tiene protección contra escritura.",
-			'InstallationException:DatarootUnderPath' => "Le directorio de datos %s debe estar por fuera de la ruta de instalación.",
-			'InstallationException:DatarootBlank' => "No se ha especificado un directorio de datos.",
-
+			'APIException:MethodCallNotImplemented' => "El m√©todo de llamada '%s' no ha sido implementado.",
+			'APIException:AlgorithmNotSupported' => "El algoritmo '%s' no está soportado o no se habilitó.",
+			'ConfigurationException:CacheDirNotSet' => "El directorio del Cache 'cache_path' no está definido.",
+			'APIException:NotGetOrPost' => "El metodo de requisición debe ser GET o POST",
+			'APIException:MissingAPIKey' => "No se encuentra el encabezado de HTTP X-Elgg-apikey",
+			'APIException:MissingHmac' => "No se encuentra el encabezado X-Elgg-hmac",
+			'APIException:MissingHmacAlgo' => "No se encuentra el encabezado X-Elgg-hmac-algo",
+			'APIException:MissingTime' => "No se encuentra el encabezado X-Elgg-time",
+			'APIException:TemporalDrift' => "X-Elgg-time se encuentra muy alejado en el pasado o futuro. Hubo un fallo de Epoch.",
+			'APIException:NoQueryString' => "No hubo datos en la línea de requisición de base de datos",
+			'APIException:MissingPOSTHash' => "No se encuentra el encabezado X-Elgg-posthash",
+			'APIException:MissingPOSTAlgo' => "No se encuentra el encabezado X-Elgg-posthash_algo",
+			'APIException:MissingContentType' => "No se encuentra el tipo de contenido para enviar los datos",
+			'SecurityException:InvalidPostHash' => "El Hash de POST no es valido - Se espero %s pero se obtuvo %s.",
+			'SecurityException:DupePacket' => "La firma del paquete ha sido vista.",
+			'SecurityException:InvalidAPIKey' => "Llave del API invalida o no se encuentra.",
+			'NotImplementedException:CallMethodNotImplemented' => "El metodo de llamada '%s' no se encuentra soportado en este momento.",
+	
+			'NotImplementedException:XMLRPCMethodNotImplemented' => "El m√©todo de llamada XML-RPC '%s' no esta implementado.",
+			'InvalidParameterException:UnexpectedReturnFormat' => "La llamada al m√©todo '%s' regreso un resultado inesperado.",
+			'CallException:NotRPCCall' => "La llamada no parece ser una llamada XML-RPC valida",
+	
+			'PluginException:NoPluginName' => "El nombre del plugin no pudo ser encontrado",
+			
 		/**
 		 * User details
 		 */
 
-			'name' => "Nombre para mostrar",
-			'email' => "Dirección de correo",
-			'username' => "Usuario",
+			'name' => "Nombre",
+			'email' => "Dirección de correo electrónico",
+			'username' => "Nombre de usuario",
 			'password' => "Contraseña",
-			'passwordagain' => "Contraseña (nuevamente para verificar)",
-			'admin_option' => "¿Convertir este usuario en administrador?",
-
+			'passwordagain' => "Contraseña (para verificar)",
+			'admin_option' => "¬øHacer de este usuario un administrador?",
+	
 		/**
 		 * Access
 		 */
-
+	
 			'ACCESS_PRIVATE' => "Privado",
-			'ACCESS_LOGGED_IN' => "Usuarios registrados",
+			'ACCESS_LOGGED_IN' => "Registrado",
 			'ACCESS_PUBLIC' => "Público",
 			'PRIVATE' => "Privado",
-			'LOGGED_IN' => "Usuarios registrados",
+			'LOGGED_IN' => "Registrado",
 			'PUBLIC' => "Público",
 			'access' => "Acceso",
-
+	
 		/**
 		 * Dashboard and widgets
 		 */
+	
+			'dashboard' => "Panel de Control",
+			'dashboard:nowidgets' => "Su tablero de instrumentos es su puente hacia el sitio. Siga la liga a 'Editar página' para agregar Widgets que lleven registro del contenido y su existencia dentro del sistema.",
 
-			'dashboard' => "Dashboard",
-			'dashboard:nowidgets' => "Esta es la página de inicio del sistema, puedes personalizarla agregando widgets presionando 'Edit page' y así seguir las actualizaciones que ocurran.",
+			'widgets:add' => 'Agregar Widgets a tu página',
+			'widgets:add:description' => "Escoja las opciones de funcionalidad que quiera agregar a su página arrastrandolas desde el <b>Widget gallery</b> a la derecha, a cualquiera de las tres areas Widget abajo, y posicionelas donde le gustaria que aparecieran.
 
-			'widgets:add' => 'Personalizar tu página',
-			'widgets:add:description' => "Selecciona las caracteristicas que deseas a tu página arrastrando y soltando desde la <b>Galería de Widgets</b> de la derecha, a cualquiera de las tres areas de abajo, y posicionalas a tu gusto donde quieres que aparezcan.
-
-Para eliminar un widget arrastralo de vuelta a la <b>Galería de Widgets</b>.",
-			'widgets:position:fixed' => '(Ajustar posición en la pantalla)',
-
+Para remover un Widget arrastrelo de regreso a la <b>Galeria de Widget </b>.",
+			'widgets:position:fixed' => '(Posicion fija en la página)',
+	
 			'widgets' => "Widgets",
 			'widget' => "Widget",
 			'item:object:widget' => "Widgets",
-			'layout:customise' => "Personalizar",
-			'widgets:gallery' => "Widget gallery",
-			'widgets:leftcolumn' => "Widgets Izquierda",
-			'widgets:fixed' => "Ajustar posición",
-			'widgets:middlecolumn' => "Widgets del centro",
-			'widgets:rightcolumn' => "Widgets Derecha",
-			'widgets:profilebox' => "Área de Perfil",
-			'widgets:panel:save:success' => "Tus widgets han sido salvados correctamente.",
-			'widgets:panel:save:failure' => "Hubo un error al salvar tus widgets. Intenta nuevamente.",
-			'widgets:save:success' => "El widget ha sido salvado correctamente.",
-			'widgets:save:failure' => "No pudimos salvar tu widgets. Intenta nuevamente.",
-
-
+			'layout:customise' => "Adaptar el esquema",
+			'widgets:gallery' => "Galeria de Widgets",
+			'widgets:leftcolumn' => "Widgets de la izquierda",
+			'widgets:fixed' => "Posicion fija",
+			'widgets:middlecolumn' => "Widgets centrales",
+			'widgets:rightcolumn' => "Widgets de la derecha",
+			'widgets:profilebox' => "Caja de perfil",
+			'widgets:panel:save:success' => "Sus Widgets fueron salvados exitosamente.",
+			'widgets:panel:save:failure' => "Hubo un problema salvando sus Widgets. Por favor intente de nuevo.",
+			'widgets:save:success' => "El Widget fue salvado exitósamente.",
+			'widgets:save:failure' => "No se pudo salvar el Widget. Por favor trate nuevamente.",
+			
+	
 		/**
 		 * Groups
 		 */
-
+	
 			'group' => "Grupo", 
 			'item:group' => "Grupos",
-
+	
 		/**
 		 * Profile
 		 */
-
+	
 			'profile' => "Perfil",
 			'user' => "Usuario",
 			'item:user' => "Usuarios",
@@ -224,532 +224,537 @@ Para eliminar un widget arrastralo de vuelta a la <b>Galería de Widgets</b>.",
 		/**
 		 * Profile menu items and titles
 		 */
-
+	
 			'profile:yours' => "Tu perfil",
-			'profile:user' => "Perfil de %s",
-
+			'profile:user' => "El perfil de %s",
+	
 			'profile:edit' => "Editar perfil",
-			'profile:editicon' => "Subir un nuevo avatar",
-			'profile:profilepictureinstructions' => "El avatar es la imágen que se muestra en tu página de perfil. <br /> Puedes cambiarlo cuando quieras. (Formatos aceptados: GIF, JPG or PNG)",
-			'profile:icon' => "Avatar",
-			'profile:createicon' => "Crear tu avatar",
+			'profile:editicon' => "Subir una nueva imagen al perfil",
+			'profile:profilepictureinstructions' => "La fotografía del perfil es la imagen que se mostrara en tu página de perfil. <br /> Puedes cambiarla cuantas veces quieras. (Tipos de archivos permitidos: GIF, JPG o PNG)",
+			'profile:icon' => "Imagen del perfil",
+			'profile:createicon' => "Crea tu avatar",
 			'profile:currentavatar' => "Avatar actual",
-			'profile:createicon:header' => "Avatar",
-			'profile:profilepicturecroppingtool' => "Crear avatar de la imagen",
-			'profile:createicon:instructions' => "Presiona y arrastra el mouse seleccionando el área que quieras cortar.  Una vista previa de la imágen aparecerá en la zóna derecha.  Cuando estés conforme con el resultado, presiona 'Crear Avatar'. Esta imágen será utilizada en el sitio para identificarte. ",
-
+			'profile:createicon:header' => "Imagen del perfil",
+			'profile:profilepicturecroppingtool' => "Herramienta para recortar la foto del perfil",
+			'profile:createicon:instructions' => "Seleccione con el ratón y arrastre un cuadrado hacia abajo para ajustar como quiere su foto recortada. Una imagen preliminar de la foto recortada aparecera en la caja de la derecha. Cuando este satisfecho con la imagen, presione \"Crear su Avatar\". Esta imagen recortada sera usada en el sitio como su Avatar. ",
+	
 			'profile:editdetails' => "Editar detalles",
-			'profile:editicon' => "Editar avatar",
-
-			'profile:aboutme' => "Acerca de mi", 
-			'profile:description' => "Acerca de mi",
-			'profile:briefdescription' => "Pequeño resumen",
-			'profile:location' => "Localización",
+			'profile:editicon' => "Icono para editar el perfil",
+	
+			'profile:aboutme' => "Acerca de", 
+			'profile:description' => "Descripción",
+			'profile:briefdescription' => "Descripción breve",
+			'profile:location' => "Ubicación",
 			'profile:skills' => "Habilidades",  
 			'profile:interests' => "Intereses", 
-			'profile:contactemail' => "Correo de contacto",
+			'profile:contactemail' => "Correo Electrónico",
 			'profile:phone' => "Teléfono",
 			'profile:mobile' => "Celular",
-			'profile:website' => "Blog/Sitio Web",
+			'profile:website' => "página web",
 
-			'profile:river:update' => "%s ha actualizado su perfil",
-			'profile:river:iconupdate' => "%s ha actualizado su avatar",
-
+			'profile:river:update' => "%s actualizo su perfil",
+			'profile:river:iconupdate' => "%s actualizo su icono del perfil",
+	
 		/**
 		 * Profile status messages
 		 */
-
-			'profile:saved' => "Su perfil ha sido salvado correctamente.",
-			'profile:icon:uploaded' => "La imágen ha sido subida correctamente.",
-
+	
+			'profile:saved' => "Tu perfil fue satisfactoriamente guardado.",
+			'profile:icon:uploaded' => "Tu imagen del perfil fue subida.",
+	
 		/**
 		 * Profile error messages
 		 */
-
-			'profile:noaccess' => "No tiene permisos suficientes para editar este perfil.",
-			'profile:notfound' => "Lo sentimos; el perfil especificado no fué encontrado.",
-			'profile:cantedit' => "Lo sentimos; no tiene permisos suficientes para editar este perfil.",
-			'profile:icon:notfound' => "Lo sentimos; hay un problema al tratar de subir la imágen.",
-
+	
+			'profile:noaccess' => "No tiene permiso para editar este perfil.",
+			'profile:notfound' => "Lo siento, no pudimos encontrar el perfil especificado.",
+			'profile:cantedit' => "Lo siento, no tiene los permisos requeridos para editar este perfil.",
+			'profile:icon:notfound' => "Lo siento, hubo un problema para subir la foto de su perfil.",
+	
 		/**
 		 * Friends
 		 */
-
+	
 			'friends' => "Amigos",
 			'friends:yours' => "Tus amigos",
-			'friends:owned' => "Amigos de %s",
-			'friend:add' => "Agregar amigo",
-			'friend:remove' => "Eliminar amigo",
-
-			'friends:add:successful' => "Has agregado correctamente %s como tu amigo.",
-			'friends:add:failure' => "No pudimos agregar a %s como tu amigo. Por favor intenta nuevamente.",
-
-			'friends:remove:successful' => "%s Ha sido eliminado correctamente de tu lista de amigos.",
-			'friends:remove:failure' => "No pudimos eliminar a %s de tu lista de amigos. Por favor intenta nuevamente.",
-
-			'friends:none' => "Este usuario no ha agredado a su listado ningún amigo todavia.",
-			'friends:none:you' => "¡Aun no has agregado a tu listado ningún amigo! Busca por el campo de intereses y empieza a encontrar personas para seguir.",
-
-			'friends:none:found' => "No se han encontrado amigos.",
-
-			'friends:of:none' => "Nadie ha agregado a este usuario como amigo todavia.",
-			'friends:of:none:you' => "Nadia te ha agregado como su amigo todavia. Inicia agregando contenido y completando tu perfil para facilitar a las personas que te encuentren!",
-
+			'friends:owned' => "Los amigos de %s",
+			'friend:add' => "Agregar amigos",
+			'friend:remove' => "Eliminar amigos",
+	
+			'friends:add:successful' => "Has agregado exitosamente a %s como un amigo.",
+			'friends:add:failure' => "No hemos podido agregar a %s como un amigo. Por favor intente de nuevo.",
+	
+			'friends:remove:successful' => "Has dado de baja exitosamente a %s de tu lista de amigos.",
+			'friends:remove:failure' => "No pudimos remover a %s de tu lista de amigos. Por favor intenta de nuevo.",
+	
+			'friends:none' => "Este usuario no ha agregado a nadie en su lista todavía.",
+			'friends:none:you' => "No has agregado a nadie en tu lista de amigos! Busca personas basado en lo que te interesa.",
+	
+			'friends:none:found' => "No se encontraron amigos.",
+	
+			'friends:of:none' => "Nadie hasta este momento ha agregado a este usuario como su amigo.",
+			'friends:of:none:you' => "Nadie te ha agregado como su amigo todavía. Empieza a agregar contenido y completa tu perfil para que le permitas a los demas encontrarte!",
+	
 			'friends:of' => "Amigos de",
-			'friends:of:owned' => "Personas que han agregado a %s en su lista de amigos",
+			'friends:of:owned' => "Gente que ha hecho a %s su amigo",
 
-			 'friends:num_display' => "Número de amigos a mostrar",
-			 'friends:icon_size' => "Tamaño del ícono",
-			 'friends:tiny' => "minúsculo",
+			 'friends:num_display' => "Número de amigos para mostrar",
+			 'friends:icon_size' => "Tamaño del icono",
+			 'friends:tiny' => "diminuto",
 			 'friends:small' => "pequeño",
 			 'friends' => "Amigos",
 			 'friends:of' => "Amigos de",
-			 'friends:collections' => "Grupo de amigos",
-			 'friends:collections:add' => "Nuevo grupo de amigos",
+			 'friends:collections' => "Colecciones de amigos",
+			 'friends:collections:add' => "Colección de amigos nueva",
 			 'friends:addfriends' => "Agregar amigos",
-			 'friends:collectionname' => "Nombre del grupo de amigos",
-			 'friends:collectionfriends' => "Amigos en el grupo",
-			 'friends:collectionedit' => "Editar este grupo de amigos",
-			 'friends:nocollections' => "Aun no tienes grupos de amigos.",
-			 'friends:collectiondeleted' => "Tu grupo de amigos ha sido eliminado.",
-			 'friends:collectiondeletefailed' => "No podemos eliminar el grupo de amigos. Tal vez no tienes privilegios suficientes, ó algún otro problema ha ocurrido.",
-			 'friends:collectionadded' => "Tu grupo de amigos ha sido creado satisfactoriamente",
-			 'friends:nocollectionname' => "Necesitas un nombre para este grupo de amigos antes que pueda ser creado.",
-
-			'friends:river:created' => "%s agregó el widget de amigos.",
-			'friends:river:updated' => "%s actualizó el widget de amigos.",
-			'friends:river:delete' => "%s eliminó su widget de amigos.",
-			'friends:river:add' => "%s agregó alguien a su lista de amigos.",
-
+			 'friends:collectionname' => "Nombre de la colección de amigos",
+			 'friends:collectionfriends' => "Amigos en la colección",
+			 'friends:collectionedit' => "Editar esta colección",
+			 'friends:nocollections' => "No tiene ninguna colección de amigos todavía.",
+			 'friends:collectiondeleted' => "Su colección de amigos ha sido borrada.",
+			 'friends:collectiondeletefailed' => "No ha sido posible borrar la colección de amigos. No cuenta con el permiso requerido, o algún otro problema ha ocurrido.",
+			 'friends:collectionadded' => "Su colección de amigos fue creada exitosamente",
+			 'friends:nocollectionname' => "Usted necesita darle a la colección de amigos un nombre antes de que pueda ser creada.",
+		
+	        'friends:river:created' => "%s agregó el Widget de amigos.",
+	        'friends:river:updated' => "%s actualizó su Widget de amigos.",
+	        'friends:river:delete' => "%s borró su Widget de amigos.",
+	        'friends:river:add' => "%s agregó a alguien como su amigo.",
+	
 		/**
 		 * Feeds
 		 */
-			'feed:rss' => 'Suscríbete al feed',
-			'feed:odd' => 'Sindica OpenDD',
-
+			'feed:rss' => 'Suscríbete al RSS',
+			'feed:odd' => 'Syndicate OpenDD',
+	
 		/**
 		 * River
 		 */
-			'river' => "Río",			
-			'river:relationship:friend' => 'es ahora amigo de',
+			'river' => "River",			
+			'river:relationship:friend' => 'es ahora amigo con',
 
 		/**
 		 * Plugins
 		 */
-			'plugins:settings:save:ok' => "Los ajustes para el plugin %s fueron salvados correctamente.",
-			'plugins:settings:save:fail' => "Hay un problema al salvar las preferencias para el plugin %s.",
-			'plugins:usersettings:save:ok' => "La preferencias de usuario han sido salvadas correctamente en el plugin %s.",
-			'plugins:usersettings:save:fail' => "Hay un problema al salvar las preferencias de usuario en el plugin %s.",
-
+			'plugins:settings:save:ok' => "La configuración del Plugin %s fueron salvados exitosamente.",
+			'plugins:settings:save:fail' => "Hubo un problema salvando la configuración del Plugin %s.",
+			'plugins:usersettings:save:ok' => "La configuracion de usuario para el Plugin %s fueron salvados exitosamente.",
+			'plugins:usersettings:save:fail' => "Hubo un problema para salvar la configuración de usuario para el Plugin %s.",
+			
 		/**
 		 * Notifications
 		 */
-			'notifications:usersettings' => "Ajustes de notificaciones",
-			'notifications:methods' => "Por favor especifique cuales métodos va a permitir.",
-
-			'notifications:usersettings:save:ok' => "Los ajustes de notificaciones han sido guardados correctamente.",
-			'notifications:usersettings:save:fail' => "Hay un problema al salvar los ajustes de notificaciones.",
+			'notifications:usersettings' => "Configuración de notificaciones",
+			'notifications:methods' => "Por favor especifique que métodos quiere autorizar.",
+	
+			'notifications:usersettings:save:ok' => "La configuración de sus notificaciones se salvo exitosamente.",
+			'notifications:usersettings:save:fail' => "Hubo un problema salvando la configuración de sus notificaciones.",
 		/**
 		 * Search
 		 */
-
+	
 			'search' => "Buscar",
 			'searchtitle' => "Buscar: %s",
-			'users:searchtitle' => "Buscando por usuarios: %s",
-			'advancedsearchtitle' => "%s con resultados buscando %s",
+			'users:searchtitle' => "Buscando usuarios: %s",
+			'advancedsearchtitle' => "%s con resultados concordando con %s",
 			'notfound' => "No se encontraron resultados.",
 			'next' => "Siguiente",
 			'previous' => "Anterior",
-
-			'viewtype:change' => "Cambiar el listado de tipos",
+	
+			'viewtype:change' => "Cambiar tipo de listado",
 			'viewtype:list' => "Ver listado",
-			'viewtype:gallery' => "Galería",
+			'viewtype:gallery' => "Ver galeria",
+	
+			'tag:search:startblurb' => "Objetos con etiquetas concordando '%s':",
 
-			'tag:search:startblurb' => "Items con tags iguales a '%s':",
-
-			'user:search:startblurb' => "Usuarios iguales a '%s':",
-			'user:search:finishblurb' => "Para ver más, presione aquí.",
-
+			'user:search:startblurb' => "Usuarios concordando con '%s':",
+			'user:search:finishblurb' => "Para ver mas, siga esta liga.",
+	
 		/**
 		 * Account
 		 */
-
+	
 			'account' => "Cuenta",
-			'settings' => "Ajustes",
-
-			'register' => "Registrarse",
-			'registerok' => "Te haz registrado existosamente a %s. Para activar tu cuenta, por favor confirma el correo que ha sido enviado a tu cuenta presionando el enlace allí adjunto.",
-			'registerbad' => "Tu registro no fué exitoso. El nombre de usuario ya existe, tus contraseñas no son iguales, ó tu nombre de usuario o contraseña son muy cortos.",
-			'registerdisabled' => "EL registro de nuevos usuarios ha sido deshabilitado por el administrador",
-
-			'registration:notemail' => 'La dirección de correo suministrada parece no ser una dirección de correo válida.',
-			'registration:userexists' => 'Ese nombre de usuario ya existe',
-			'registration:usernametooshort' => 'Tu nombre de usuario debe tener mínimo 4 caracteres de largo.',
-			'registration:passwordtooshort' => 'La contraseña debe tener mínimo 6 caracteres de largo.',
-			'registration:dupeemail' => 'Esta cuenta de correo ya ha sido registrada.',
-
+			'settings' => "Configuración",
+	
+			'register' => "Registro",
+			'registerok' => "Se ha registrado exitosamente para %s. Para activar su cuenta, por favor confirme su correo electronico siguiendo la liga que le enviamos en un correo electrónico a la cuenta que nos proporciono.",
+			'registerbad' => "No ha podido ser registrado. El nombre de usuario puede existir con anterioridad, o puede ser que sus password no concuerden.",
+			'registerdisabled' => "Los registros han sido deshabilitados por el administrador del sistema.",
+	
+			'registration:notemail' => 'The email address you provided does not appear to be a valid email address.',
+			'registration:userexists' => 'That username already exists',
+			'registration:usernametooshort' => 'Your username must be a minimum of 4 characters long.',
+			'registration:passwordtooshort' => 'The password must be a minimum of 6 characters long.',
+			'registration:dupeemail' => 'This email address has already been registered.',
+			
 			'adduser' => "Agregar usuario",
-			'adduser:ok' => "Se ha agregado el nuevo usuario exitosamente.",
-			'adduser:bad' => "EL nuevo usuario no pudo ser creado.",
-
-			'item:object:reported_content' => "Contenido reportado",
-
-			'user:set:name' => "Ajustes de nombre de cuenta",
-			'user:name:label' => "Tu nombre",
-			'user:name:success' => "Ha cambiado exitosamente tu nombre en el sistema.",
-			'user:name:fail' => "No se pudo cambiar tu nombre en el sistema.",
-
-			'user:set:password' => "Contraseña de la cuenta",
-			'user:password:label' => "Tu nueva contraseña",
-			'user:password2:label' => "Repetir nueva contraseña",
-			'user:password:success' => "La contraseña ha sido cambiada",
-			'user:password:fail' => "No se pudo cambiar tu contraseña en el sistema.",
-			'user:password:fail:notsame' => "¡Las dos contraseñas porporcionadas no son iguales!",
-			'user:password:fail:tooshort' => "¡La contraseña es muy corta!",
-
-			'user:set:language' => "Ajustes de lenguaje",
-			'user:language:label' => "Tu lenguaje",
-			'user:language:success' => "Tus ajustes de lenguaje han sido actualizados.",
-			'user:language:fail' => "Tus ajustes de lenguaje no pudieron ser salvados.",
-
-			'user:username:notfound' => 'El nombrede de usuario %s no ha sido encontrado.',
-
-			'user:password:lost' => 'Recuperar contraseña',
-			'user:password:resetreq:success' => 'Se ha solicitado una nueva contraseña, el email ha sido enviado correctamente',
-			'user:password:resetreq:fail' => 'No se ha podido obtener una nueva contraseña.',
-
-			'user:password:text' => 'Para generar una nueva contraseña, ingrese tu nombre de usuario a continuación. Enviaremos un mensaje de confirmación con la dirección para obtener una nueva contraseña.',
-
+			'adduser:ok' => "Ha agregado exitosamente a un nuevo usuario.",
+			'adduser:bad' => "El nuevo usuario no pudo ser creado.",
+	
+			'item:object:reported_content' => "Reported items",
+			
+			'user:set:name' => "Configuración de nombre de cuenta",
+			'user:name:label' => "Su nombre",
+			'user:name:success' => "Se cambio exitosamente su nombre en el sistema.",
+			'user:name:fail' => "No se pudo cambiar su nombre en el sistema.",
+	
+			'user:set:password' => "Contraseña de su cuenta",
+			'user:password:label' => "Su nueva contraseña",
+			'user:password2:label' => "Su contraseña de nuevo",
+			'user:password:success' => "Contraseña cambiada",
+			'user:password:fail' => "No se pudo cambiar su contraseña en el sistema.",
+			'user:password:fail:notsame' => "Las dos contraseñas no son las mismas!",
+			'user:password:fail:tooshort' => "La contraseña es muy corta!",
+	
+			'user:set:language' => "Configuración de lenguaje",
+			'user:language:label' => "Su lenguaje",
+			'user:language:success' => "Su configuración de lenguaje ha sido actualizada.",
+			'user:language:fail' => "Su configuración de lenguaje no pudo ser salvada.",
+	
+			'user:username:notfound' => 'No se encontró el nombre del usuario %s.',
+	
+			'user:password:lost' => 'Contraseña perdida',
+			'user:password:resetreq:success' => 'Petición de nueva contraseña ha sido exitoso, se ha enviado un correo electrónico.',
+			'user:password:resetreq:fail' => 'No se pudo obtener una nueva contraeña.',
+	
+			'user:password:text' => 'Para generar una nueva contraseña, de de alta su cuenta de usuario abajo. Le enviaremos la dirección de una página de verificación única vía correo electrónico. Siga la liga en ese correo electrónico y una nueva contrasena le sera enviada.',
+	
 		/**
-		 * Administration
+		 * Administración
 		 */
 
-			'admin:configuration:success' => "Your settings have been saved.",
-			'admin:configuration:fail' => "Your settings could not be saved.",
-
-			'admin' => "Administration",
-			'admin:description' => "The admin panel allows you to control all aspects of the system, from user management to how plugins behave. Choose an option below to get started.",
-
-			'admin:user' => "User Administration",
-			'admin:user:description' => "This admin panel allows you to control user settings for your site. Choose an option below to get started.",
-			'admin:user:adduser:label' => "Click here to add a new user...",
-			'admin:user:opt:linktext' => "Configure users...",
-			'admin:user:opt:description' => "Configure users and account information. ",
-
-			'admin:site' => "Site Administration",
-			'admin:site:description' => "This admin panel allows you to control global settings for your site. Choose an option below to get started.",
-			'admin:site:opt:linktext' => "Configure site...",
-			'admin:site:opt:description' => "Configure the site technical and non-technical settings. ",
-
-			'admin:plugins' => "Tool Administration",
-			'admin:plugins:description' => "This admin panel allows you to control and configure tools installed on your site.",
-			'admin:plugins:opt:linktext' => "Configure tools...",
-			'admin:plugins:opt:description' => "Configure the tools installed on the site. ",
-			'admin:plugins:label:author' => "Author",
+			'admin:configuration:success' => "Tu configuración ha sido guardada.",
+			'admin:configuration:fail' => "Tu configuraciónn no pudo guardada.",
+	
+			'admin' => "Administración",
+			'admin:description' => "El panel de administración te permite controlar todos los aspectos del sistema, desde gestión de usuarios al comportamiento de los plugins. Elige una upción abajo para comenzar.",
+			
+			'admin:user' => "Administración de usuario.",
+			'admin:user:description' => "Este panel de administración te permite a controlar la configuración de usuario para tu sitio. Elige una opción abajo para comenzar.",
+			'admin:user:adduser:label' => "Haz click aquí para añadir un usuario nuevo...",
+			'admin:user:opt:linktext' => "Configurar usuarios...",
+			'admin:user:opt:description' => "Configurar usuarios e información de cuenta... ",
+			
+			'admin:site' => "Administración del sitio",
+			'admin:site:description' => "Este panel de administración de permite controlar una configuración global para tu sitio. Elige una opción abajo para comenzar.",
+			'admin:site:opt:linktext' => "Configurar el sitio...",
+			'admin:site:opt:description' => "Configurar los parámetros técnicos y no técnicos. ",
+			
+			'admin:plugins' => "Aministrar herramientas.",
+			'admin:plugins:description' => "Este panel de administración te permite controlar y configurar las herramientas instaladas en tu sistema.",
+			'admin:plugins:opt:linktext' => "Configurar herramientas...",
+			'admin:plugins:opt:description' => "Configurar las herramientas instaladas en el sitio. ",
+			'admin:plugins:label:author' => "Autor",
 			'admin:plugins:label:copyright' => "Copyright",
-			'admin:plugins:label:licence' => "Licence",
+			'admin:plugins:label:licence' => "Licencia",
 			'admin:plugins:label:website' => "URL",
-			'admin:plugins:disable:yes' => "Plugin %s was disabled successfully.",
-			'admin:plugins:disable:no' => "Plugin %s could not be disabled.",
-			'admin:plugins:enable:yes' => "Plugin %s was enabled successfully.",
-			'admin:plugins:enable:no' => "Plugin %s could not be enabled.",
-
-			'admin:statistics' => "Statistics",
-			'admin:statistics:description' => "This is an overview of statistics on your site. If you need more detailed statistics, a professional administration feature is available.",
-			'admin:statistics:opt:description' => "View statistical information about users and objects on your site.",
-			'admin:statistics:opt:linktext' => "View statistics...",
-			'admin:statistics:label:basic' => "Basic site statistics",
-			'admin:statistics:label:numentities' => "Entities on site",
-			'admin:statistics:label:numusers' => "Number of users",
-			'admin:statistics:label:numonline' => "Number of users online",
-			'admin:statistics:label:onlineusers' => "Users online now",
-			'admin:statistics:label:version' => "Elgg version",
-			'admin:statistics:label:version:release' => "Release",
-			'admin:statistics:label:version:version' => "Version",
-
-			'admin:user:label:search' => "Find users:",
-			'admin:user:label:seachbutton' => "Search", 
-
-			'admin:user:ban:no' => "Can not ban user",
-			'admin:user:ban:yes' => "User banned.",
-			'admin:user:unban:no' => "Can not unban user",
-			'admin:user:unban:yes' => "User un-banned.",
-			'admin:user:delete:no' => "Can not delete user",
-			'admin:user:delete:yes' => "User deleted",
-
-			'admin:user:resetpassword:yes' => "Password reset, user notified.",
-			'admin:user:resetpassword:no' => "Password could not be reset.",
-
-			'admin:user:makeadmin:yes' => "User is now an admin.",
-			'admin:user:makeadmin:no' => "We could not make this user an admin.",
-
-		/**
-		 * User settings
+			'admin:plugins:disable:yes' => "El plugin %s se deshabilitó con éxito.",
+			'admin:plugins:disable:no' => "El plugin %s no se pudo deshabilitar.",
+			'admin:plugins:enable:yes' => "El plugin %s se habilito con éxito.",
+			'admin:plugins:enable:no' => "El plugin %s no se pudo habilitar.",
+	
+			'admin:statistics' => "Estadísticas",
+			'admin:statistics:description' => "Esta es una vista general de las estadísticas en tu sitio. Si necesitar estadísticas más detalladas, hay una ventana de administración profesional disponible.",
+			'admin:statistics:opt:description' => "Ver información estadística sobre usuarios y objetos en tu sitio.",
+			'admin:statistics:opt:linktext' => "Ver estadísticas...",
+			'admin:statistics:label:basic' => "Estadísticas básicas del sitio",
+			'admin:statistics:label:numentities' => "Entidades en el sitio",
+			'admin:statistics:label:numusers' => "Número de usuarios",
+			'admin:statistics:label:numonline' => "Número de usuarios online",
+			'admin:statistics:label:onlineusers' => "Usuarios online ahora",
+			'admin:statistics:label:version' => "Versión de Elgg",
+			'admin:statistics:label:version:release' => "Lanzamiento",
+			'admin:statistics:label:version:version' => "Versión",
+	
+			'admin:user:label:search' => "Encontrar usuarios:",
+			'admin:user:label:seachbutton' => "Buscar", 
+	
+			'admin:user:ban:no' => "No se puede banear al usuario",
+			'admin:user:ban:yes' => "Usuario baneado.",
+			'admin:user:unban:no' => "No se puede quitar el baneo al usuario",
+			'admin:user:unban:yes' => "Se le quitó el baneo al usuario.",
+			'admin:user:delete:no' => "No se puede eliminar al usuario",
+			'admin:user:delete:yes' => "Usuario eliminado",
+	
+			'admin:user:resetpassword:yes' => "Contraseña reseteada, usuario notificado.",
+			'admin:user:resetpassword:no' => "La contraseña no se pudo resetear.",
+	
+			'admin:user:makeadmin:yes' => "El usuario es ahora administrador.",
+			'admin:user:makeadmin:no' => "No pudimos hacer a este usuario administrador.",
+			
+				/**
+		 * Configuración de usuario
 		 */
-			'usersettings:description' => "The user settings panel allows you to control all your personal settings, from user management to how plugins behave. Choose an option below to get started.",
-
-			'usersettings:statistics' => "Your statistics",
-			'usersettings:statistics:opt:description' => "View statistical information about users and objects on your site.",
-			'usersettings:statistics:opt:linktext' => "Account statistics",
-
-			'usersettings:user' => "Your settings",
-			'usersettings:user:opt:description' => "This allows you to control user settings.",
-			'usersettings:user:opt:linktext' => "Change your settings",
-
-			'usersettings:plugins' => "Tools",
-			'usersettings:plugins:opt:description' => "Configure settings for your active tools.",
-			'usersettings:plugins:opt:linktext' => "Configure your tools...",
-
-			'usersettings:plugins:description' => "This panel allows you to control and configure the personal settings for the tools installed by your system administrator.",
-			'usersettings:statistics:label:numentities' => "Your entities",
-
-			'usersettings:statistics:yourdetails' => "Your details",
-			'usersettings:statistics:label:name' => "Full name",
+			'usersettings:description' => "El panel de configuración de usuario te permtie controlar toda tu configuración personal, desde gestión de usuarios al comportamiento de los plugins. Elige una opción abajo para comenzar.",
+	
+			'usersettings:statistics' => "Tus estadísticas",
+			'usersettings:statistics:opt:description' => "ver información estadística sobre usuarios y objetos en tu sitio.",
+			'usersettings:statistics:opt:linktext' => "Estadísticas de la cuenta",
+	
+			'usersettings:user' => "Tu configuración",
+			'usersettings:user:opt:description' => "Esto te permite controlar tu configuración de usuario.",
+			'usersettings:user:opt:linktext' => "Cambia tu configuración",
+	
+			'usersettings:plugins' => "Herramientas",
+			'usersettings:plugins:opt:description' => "Opciones de configuración para tus herramientas activas.",
+			'usersettings:plugins:opt:linktext' => "Configurar tus herramientas...",
+	
+			'usersettings:plugins:description' => "Este panel te permite controlar y configurar tus opciones personales para las herramientas instaladas por tu administrador del sistema.",
+			'usersettings:statistics:label:numentities' => "Tus entidades",
+	
+			'usersettings:statistics:yourdetails' => "Tus detalles",
+			'usersettings:statistics:label:name' => "Nombre completo",
 			'usersettings:statistics:label:email' => "Email",
-			'usersettings:statistics:label:membersince' => "Member since",
-			'usersettings:statistics:label:lastlogin' => "Last logged in",
-
-
-
+			'usersettings:statistics:label:membersince' => "Miembro desde",
+			'usersettings:statistics:label:lastlogin' => "Última vez conectado",
+	
+	
+			
+	
+	
 		/**
 		 * Generic action words
 		 */
-
-			'save' => "Save",
-			'cancel' => "Cancel",
-			'saving' => "Saving ...",
-			'update' => "Update",
-			'edit' => "Edit",
-			'delete' => "Delete",
-			'load' => "Load",
-			'upload' => "Upload",
-			'ban' => "Ban",
+	
+			'save' => "Guardar",
+			'cancel' => "Cancelar",
+			'saving' => "Guardando ...",
+			'update' => "Actualizar",
+			'edit' => "Editar",
+			'delete' => "Borrar",
+			'load' => "Bajar",
+			'upload' => "Subir",
+			'ban' => "Prohibir",
 			'unban' => "Unban",
-			'enable' => "Enable",
-			'disable' => "Disable",
-			'request' => "Request",
-
-			'invite' => "Invite",
-
-			'resetpassword' => "Reset password",
-			'makeadmin' => "Make admin",
-
-			'option:yes' => "Yes",
+			'enable' => "Activar",
+			'disable' => "Desactivar",
+			'request' => "Requisición",
+	
+			'invite' => "Invitar",
+	
+			'resetpassword' => "Eliminar contraseña",
+			'makeadmin' => "Hacer administrador",
+	
+			'option:yes' => "Si",
 			'option:no' => "No",
-
-			'unknown' => 'Unknown',
-
-			'learnmore' => "Click here to learn more.",
-
+	
+			'unknown' => 'Desconocida',
+	
+			'learnmore' => "Siga la liga para aprender mas.",
+	
 			'content' => "content",
-			'content:latest' => 'Actividad reciente',
-			'content:latest:blurb' => 'En este enlace puedes encontrar el más reciente actividad en el sitio.',
-
+			'content:latest' => 'Latest activity',
+			'content:latest:blurb' => 'Alternatively, click here to view the latest content from across the site.',
+			
 		/**
 		 * Generic data words
 		 */
-
-			'title' => "Title",
-			'description' => "Description",
-			'tags' => "Tags",
-			'spotlight' => "Spotlight",
-			'all' => "All",
-
-			'by' => 'by',
-
-			'annotations' => "Annotations",
-			'relationships' => "Relationships",
+	
+			'title' => "Título",
+			'description' => "Descripción",
+			'tags' => "Etiquetas",
+			'spotlight' => "En la mira",
+			/* This was the original translation, but I prefer the other one. Feel free to change
+			'spotlight' => "Centro de atracción", */
+			'all' => "Todos",
+	
+			'by' => 'Por',
+	
+			'annotations' => "Anotaciones",
+			'relationships' => "Relaciones",
 			'metadata' => "Metadata",
-
+	
 		/**
 		 * Input / output strings
 		 */
 
-			'deleteconfirm' => "Are you sure you want to delete this item?",
-			'fileexists' => "A file has already been uploaded. To replace it, select it below:",
-
+			'deleteconfirm' => "¿Estas seguro que quieres borrar este objeto?",
+			'fileexists' => "Un archivo ha sido subido con anterioridad. Para reemplazarlo, selecciónelo de la lista de abajo:",
+	
 		/**
 		 * Import / export
 		 */
-			'importsuccess' => "Import of data was successful",
-			'importfail' => "OpenDD import of data failed.",
-
+			'importsuccess' => "Los datos fueron exportados satisfactóriamente",
+			'importfail' => "Los datos de OpenDD no pudierson ser importados",
+	
 		/**
 		 * Time
 		 */
-
-			'friendlytime:justnow' => "justo ahora",
+	
+			'friendlytime:justnow' => "ahora mismo",
 			'friendlytime:minutes' => "hace %s minutos",
 			'friendlytime:minutes:singular' => "hace un minuto",
 			'friendlytime:hours' => "hace %s horas",
 			'friendlytime:hours:singular' => "hace una hora",
 			'friendlytime:days' => "hace %s días",
 			'friendlytime:days:singular' => "ayer",
-
+	
 		/**
-		 * Installation and system settings
+		 * Instalación y configuración del sistema
 		 */
+	
+			'installation:error:htaccess' => "Elgg requiere que se llame a un archivo .htaccess que se emplace en el directorio raíz de su instalación. Intentamos crearlo para ti, pero Elgg no tiene permiso de escritura en ese directorio. 
 
-			'installation:error:htaccess' => "Elgg requires a file called .htaccess to be set in the root directory of its installation. We tried to create it for you, but Elgg doesn't have permission to write to that directory. 
-
-Creating this is easy. Copy the contents of the textbox below into a text editor and save it as .htaccess
+Crear esto es fácil. Copia el contenido del cuadro de texto inferior en un editor de texto y guárdalo como .htaccess
 
 ",
-			'installation:error:settings' => "Elgg couldn't find its settings file. Most of Elgg's settings will be handled for you, but we need you to supply your database details. To do this:
+			'installation:error:settings' => "Elgg no pudo encontrar su archivo de configuración de usuario. La mayor parte de opciones de configuración de Elgg serán manejadas por tí, pero necesitamos que proporciones los detalles de tu base de datos. Para hacer esto:
 
-1. Rename engine/settings.example.php to settings.php in your Elgg installation.
+1. Cambia el nombre de engine/settings.example.php a settings.php en tu instalación Elgg.
 
-2. Open it with a text editor and enter your MySQL database details. If you don't know these, ask your system administrator or technical support for help.
+2. Ábrelo con un editor de textos e introduce los detalles de tu base de datos MySQL. Si no los conoces, pregunta a tu administrador del sistema o soporte técnico para ayuda.
 
-Alternatively, you can enter your database settings below and we will try and do this for you...",
-
-			'installation:error:configuration' => "Once you've corrected any configuration issues, press reload to try again.",
-
-			'installation' => "Installation",
-			'installation:success' => "Elgg's database was installed successfully.",
-			'installation:configuration:success' => "Your initial configuration settings have been saved. Now register your initial user; this will be your first system administrator.",
-
-			'installation:settings' => "System settings",
-			'installation:settings:description' => "Now that the Elgg database has been successfully installed, you need to enter a couple of pieces of information to get your site fully up and running. We've tried to guess where we could, but <b>you should check these details.</b>",
-
-			'installation:settings:dbwizard:prompt' => "Enter your database settings below and hit save:",
-			'installation:settings:dbwizard:label:user' => "Database user",
-			'installation:settings:dbwizard:label:pass' => "Database password",
-			'installation:settings:dbwizard:label:dbname' => "Elgg database",
-			'installation:settings:dbwizard:label:host' => "Database hostname (usually 'localhost')",
-			'installation:settings:dbwizard:label:prefix' => "Database table prefix (usually 'elgg')",
-
-			'installation:settings:dbwizard:savefail' => "We were unable to save the new settings.php. Please save the following file as engine/settings.php using a text editor.",
-
-			'installation:sitename' => "The name of your site (eg \"My social networking site\"):",
-			'installation:sitedescription' => "Short description of your site (optional)",
-			'installation:wwwroot' => "The site URL, followed by a trailing slash:",
-			'installation:path' => "The full path to your site root on your disk, followed by a trailing slash:",
-			'installation:dataroot' => "The full path to the directory where uploaded files will be stored, followed by a trailing slash:",
-			'installation:dataroot:warning' => "You must create this directory manually. It should sit in a different directory to your Elgg installation.",
-			'installation:language' => "The default language for your site:",
-			'installation:debug' => "Debug mode provides extra information which can be used to diagnose faults, however it can slow your system down so should only be used if you are having problems:",
-			'installation:debug:label' => "Turn on debug mode",
-			'installation:usage' => "This option lets Elgg send anonymous usage statistics back to Curverider.",
-			'installation:usage:label' => "Send anonymous usage statistics",
-			'installation:view' => "Enter the view which will be used as the default for your site or leave this blank for the default view (if in doubt, leave as default):",
-
+De forma alternativa, puedes introducir la configuración de tu base de datos abajo y nosotros intentaremos hacerlo por tí...",
+	
+			'installation:error:configuration' => "Una vez hayas corregido problemas de configuración, pulsa recargar para volver a intentarlo.",
+	
+			'installation' => "Instalación",
+			'installation:success' => "La base de datos de Elgg se instaló con éxito.",
+			'installation:configuration:success' => "Tus opaciones de configuración iniciales se han guardado. Ahora registra a tu usuario inicial; este será tu primer administrador del sistema.",
+	
+			'installation:settings' => "Configuración del sistema",
+			'installation:settings:description' => "Ahora que la base de datos de Elgg ha sido instalada con éxito, necesitas introducir un poco de información para tener tu sitio completo y funcionando. Hemos intentado adivinar y rellenar todo lo posible, pero debes revisar estos detalles.",
+	
+			'installation:settings:dbwizard:prompt' => "Introduce la configuración de tu base de datos abajo y pulsa en guardar:",
+			'installation:settings:dbwizard:label:user' => "Usuario de la base de datos",
+			'installation:settings:dbwizard:label:pass' => "Contraseña de la base de datos",
+			'installation:settings:dbwizard:label:dbname' => "Base de datos de Elgg",
+			'installation:settings:dbwizard:label:host' => "Nombre del host de la base de datos (normalmente 'localhost')",
+			'installation:settings:dbwizard:label:prefix' => "Prefijo para la tabla de la base de datos (normalmente 'elgg')",
+	
+			'installation:settings:dbwizard:savefail' => "No pudimos guardar el nuevo archivo settings.php. Por favor guarda el archivo siguiente como engine/settings.php utilizando un editor de textos.",
+	
+			'sitename' => "El nombre de tu sitio (ej. \"El sitio de mi red social\"):",
+			'sitedescription' => "Breve descripción de tu sitio (opcional)",
+			'wwwroot' => "El sitio URL, seguido de una barra invertida:",
+			'path' => "La ruta completa de tu directorio raíz en tu disco, seguido de una barra invertida:",
+			'dataroot' => "La ruta completa del directorio donde se guardarán los ficheros subidos, seguida de una barra invertida:",
+			'language' => "El lenguaje por defecto para tu sitio:",
+			'debug' => "El modo Debug proporciona información extra que puede ser utilizad para realizar un diagnóstico de fallos, pero puede realentizar tu sistema así que sólo debe utilizarse si experimentas problemas:",
+			'debug:label' => "Activar el modo Debug",
+			'usage' => "Esta opción permite a Elgg mandar estadñisticas anónimas de utilización a Curverider.",
+			'usage:label' => "mandar estadísticas anónimas de uso",
+			'view' => "Introducir la vista que se utilizará por defecto para tu sitio (ej. 'móvil'), o deja este espacio en blanco para tener la que viene por defecto:",
+	
+	
 		/**
-		 * Welcome
+		 * Bienvenido
 		 */
-
-			'welcome' => "Welcome %s",
-			'welcome_message' => "Welcome to this Elgg installation.",
-
+	
+			'welcome' => "Bienvenido/a %s",
+			'welcome_message' => "Bienvenido a esta instalación de Elgg.",
+	
 		/**
 		 * Emails
 		 */
-			'email:settings' => "Email settings",
-			'email:address:label' => "Your email address",
+			'email:settings' => "Configuración de email",
+			'email:address:label' => "Tu dirección de email",
+			
+			'email:save:success' => "Nueva dirección email guardada, verificación solicitada.",
+			'email:save:fail' => "Tu nueva dirección email no pudo guardarse.",
+	
+			'email:confirm:success' => "¡Has confirmado tu dirección email!",
+			'email:confirm:fail' => "Tu dirección email no pudo ser verificada...",
+	
+			'friend:newfriend:subject' => "¡%s te ha hecho su amigo!",
+			'friend:newfriend:body' => "¡%s te ha hecho su amigo!
 
-			'email:save:success' => "New email address saved, verification requested.",
-			'email:save:fail' => "Your new email address could not be saved.",
-
-			'email:confirm:success' => "You have confirmed your email address!",
-			'email:confirm:fail' => "Your email address could not be verified...",
-
-			'friend:newfriend:subject' => "%s has made you a friend!",
-			'friend:newfriend:body' => "%s has made you a friend!
-
-To view their profile, click here:
+Para ver su perfil, haz click aquí:
 
 	%s
 
-You cannot reply to this email.",
+No puedes responder a este email.",
+	
+	
+			'email:validate:subject' => "¡Por favor confirma tu dirección email %s!",
+			'email:validate:body' => "Hola %s,
 
-
-			'email:validate:subject' => "%s please confirm your email address!",
-			'email:validate:body' => "Hi %s,
-
-Please confirm your email address by clicking on the link below:
-
-%s
-",
-			'email:validate:success:subject' => "Email validated %s!",
-			'email:validate:success:body' => "Hi %s,
-
-Congratulations, you have successfully validated your email address.",
-
-
-			'email:resetpassword:subject' => "Password reset!",
-			'email:resetpassword:body' => "Hi %s,
-
-Your password has been reset to: %s",
-
-
-			'email:resetreq:subject' => "Request for new password.",
-			'email:resetreq:body' => "Hi %s,
-
-Somebody (from the IP address %s) has requested a new password for their account.
-
-If you requested this click on the link below, otherwise ignore this email.
+Por favor confirma tu dirección email haciendo click en el enlace inferior:
 
 %s
 ",
+			'email:validate:success:subject' => "¡Email validado %s!",
+			'email:validate:success:body' => "Hola %s,
+			
+Enhorabuena, has validado con éxito tu dirección email.",
+	
+	
+			'email:resetpassword:subject' => "¡Contraseña reseteada!",
+			'email:resetpassword:body' => "Hola %s,
+			
+Tu contraseña se ha reseteado a: %s",
+	
+	
+			'email:resetreq:subject' => "Solicitud para una nueva contraseña.",
+			'email:resetreq:body' => "Hola %s,
+			
+Alguien (desde la dirección IP %s) ha solicitado una contraseña nueva para su cuenta.
 
+Si solicitastes esto haz click en el enlace inferior, en otro caso por favor ignora este email.
 
+%s
+",
+
+	
 		/**
 		 * XML-RPC
 		 */
-			'xmlrpc:noinputdata'	=>	"Input data missing",
+			'xmlrpc:noinputdata'	=>	"Faltan los datos de entrada",
+	
 
+	
 		/**
 		 * Comments
 		 */
-
+	
 			'comments:count' => "%s comentarios",
-			'generic_comments:add' => "Agregar un comentario",
+			'generic_comments:add' => "Agrega un comenario",
 			'generic_comments:text' => "Comentario",
-			'generic_comment:posted' => "Su comentario ha sido publicado correctamente.",
-			'generic_comment:deleted' => "Su comentario ha sido eliminado correctamente.",
-			'generic_comment:blank' => "Lo sentimos; necesitas escribir algo en tu comentario antes de publicarlo.",
-			'generic_comment:notfound' => "Lo sentimos; no encontramos el item solicitado.",
-			'generic_comment:notdeleted' => "Lo sentimos; no podemos borrar este comentario.",
-			'generic_comment:failure' => "Un error inesperado ha ocurrido cuando se publicaba el mensaje. Intente nuevamente.",
-
+			'generic_comment:posted' => "Tu comentario fue exitósamente enviado.",
+			'generic_comment:deleted' => "Tu comentario fue exitósamente borrado.",
+			'generic_comment:blank' => "Lo sentimos; tienes que poner algo en tu comenario antes de que podamos guardarlo.",
+			'generic_comment:notfound' => "Lo sentimos; no pudimos encontrar el objeto especificado.",
+			'generic_comment:notdeleted' => "Lo sentimos; no pudimos borrar el comentario.",
+			'generic_comment:failure' => "Upps, un error inesperado ocurrió al agregar tu comentario. Por favor trata de nuevo.",
+	
 			'generic_comment:email:subject' => '¡Tienes un nuevo comentario!',
-			'generic_comment:email:body' => "Tienes un nuevo comentario en \"%s\" de %s. Y dice:
+			'generic_comment:email:body' => "Tienes un comentario nuevo en tu elemento \"%s\" de %s. Dice:
 
-
+			
 %s
 
 
-Para responder a el comentario inicial, visita:
+Para responder o ver el objeto original, haz click aquí:
 
 	%s
 
-Para ver el perfil de %s, visita:
+Para ver el perfil de %s, haz click aquí:
 
 	%s
 
-RECUERDA: Este es un mensaje automático, no respondas a el directamente por que no será recibido por destinatario alguno,
-Utiliza los enlaces anteriores.
-
-El equipo deCali.org",
-
+No puedes responder a este email.",
+	
 		/**
-		 * Entities
+		 * Entidades
 		 */
-			'entity:default:strapline' => 'Created %s by %s',
-			'entity:default:missingsupport:popup' => 'This entity cannot be displayed correctly. This may be because it requires support provided by a plugin that is no longer installed.',
-
-			'entity:delete:success' => 'Entity %s has been deleted',
-			'entity:delete:fail' => 'Entity %s could not be deleted',
-
-
+			'entity:default:strapline' => 'Creado %s por %s',
+			'entity:default:missingsupport:popup' => 'Esta entidad no puede mostrarse correctamente. Esto puede ser porque se requiera un plugin que ya no está instalado.',
+	
+			'entity:delete:success' => 'La entidad %s se ha borrado',
+			'entity:delete:fail' => 'La entidad %s no pudo eliminarse',
+	
+	
 		/**
 		 * Action gatekeeper
 		 */
-			'actiongatekeeper:missingfields' => 'Form is missing __token or __ts fields',
-			'actiongatekeeper:tokeninvalid' => 'Token provided by form does not match that generated by server.',
-			'actiongatekeeper:timeerror' => 'Form has expired, please refresh and try again.',
-			'actiongatekeeper:pluginprevents' => 'A extension has prevented this form from being submitted.',
+			'actiongatekeeper:missingfields' => 'Faltan los campos __token o __ts en el form',
+			'actiongatekeeper:tokeninvalid' => 'El token proporcionado por el form no coincide con el generado por el servidor.',
+			'actiongatekeeper:timeerror' => 'El form ha expirado, por favor actualiza y vuelve a intentar.',
+			'actiongatekeeper:pluginprevents' => 'Una extensión ha prevenido al form de ser enviado.',
 
+	
+	
 		/**
 		 * Languages according to ISO 639-1
 		 */
@@ -896,8 +901,7 @@ El equipo deCali.org",
 			"zh" => "Chinese",
 			"zu" => "Zulu",
 	);
-
+	
 	add_translation("es",$spanish);
 
 ?>
-
